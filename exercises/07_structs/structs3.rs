@@ -27,7 +27,6 @@ impl Package {
         self.sender_country != self.recipient_country
     }
 
-    // TODO: Add the correct return type to the function signature.
     fn get_fees(&self, cents_per_gram: u32) -> u32 {
         cents_per_gram * self.weight_in_grams
     }
